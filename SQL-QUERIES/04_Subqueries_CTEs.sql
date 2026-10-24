@@ -1,5 +1,6 @@
 USE SalesPracticeDB;
 GO
+    
 -- 1. Find employees whose sales are above average employee sales
 SELECT
     EmployeeName,
@@ -12,6 +13,7 @@ WHERE Sales > (
 )
 ORDER BY Sales DESC;
 GO
+    
 -- 2. Find the employee(s) with the second-highest distinct sales
 SELECT
     EmployeeName,
@@ -27,6 +29,7 @@ WHERE Sales = (
     )
 );
 GO
+    
 -- 3. Calculate total sales by department using a CTE
 WITH DepartmentSales AS (
     SELECT
@@ -41,6 +44,7 @@ SELECT
 FROM DepartmentSales
 ORDER BY TotalSales DESC;
 GO
+    
 -- 4. Find departments whose total sales exceed average department sales
 WITH DepartmentSales AS (
     SELECT
