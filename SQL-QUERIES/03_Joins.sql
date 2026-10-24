@@ -10,6 +10,7 @@ ON E.Department =
 D.DepartmentName
 ORDER BY E.Sales DESC;
 GO
+  
 --2. Calculate total sales by department using JOIN
 SELECT 
 D.DepartmentName,
@@ -21,6 +22,7 @@ D.DepartmentName
 GROUP BY D.DepartmentName
 ORDER BY TotalSales DESC;
 GO
+  
 --3. Display employees whose sales exceed their targets 
 SELECT 
 E.EmployeeName,
