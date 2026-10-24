@@ -9,6 +9,7 @@ FROM Employees
 GROUP BY Department
 ORDER BY TotalSales DESC;
 GO
+  
 --2. Calculate average sales by department
 SELECT
 Department,
@@ -17,6 +18,7 @@ FROM Employees
 GROUP BY Department
 ORDER BY AverageSales DESC;
 GO
+  
 --3. Count Employees in each department
 SELECT
 Department,
@@ -25,6 +27,7 @@ FROM Employees
 GROUP BY Department
 ORDER BY EmployeeCount DESC;
 GO
+  
 --4. Find departments with above-average total sales
 SELECT 
 Department,
