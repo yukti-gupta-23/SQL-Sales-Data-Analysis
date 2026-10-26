@@ -10,13 +10,13 @@ GO
 SELECT EmployeeName, Department, Sales
 FROM Employees
 WHERE Sales > 60000
-ORDER BY Sales DESC;\
+ORDER BY Sales DESC;
 GO
   
 -- 3. Calculate total sales by department
 SELECT Department, SUM(Sales) AS TotalSales
 FROM Employees
-GROUP BY Dpeartment 
+GROUP BY Department 
 ORDER BY TotalSales DESC;
 GO
   
